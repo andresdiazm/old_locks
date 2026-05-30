@@ -3,188 +3,364 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Old Locks Hockey</title>
-    <meta
-      name="description"
-      content="Club de hockey Old Locks para niñas. Formación, comunidad y próximos encuentros."
-    />
+    <title>Old Locks Hockey Club</title>
+    <meta name="description" content="Club de hockey césped Old Locks. Formamos campeonas desde sus primeros pasos en la cancha." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
+
+    <!-- HEADER -->
+    <header class="site-header" id="site-header">
       <a class="brand" href="#inicio" aria-label="Old Locks inicio">
-        <img src="assets/old-locks-logo.png" alt="Old Locks" />
-        <span>Old Locks</span>
+        <img src="assets/old-locks-logo-transparent.png" alt="Old Locks" />
+        <span class="brand-name">Old Locks</span>
       </a>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="sr-only">Abrir menú</span>
-      </button>
-
       <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
-        <a href="#fechas">Próximas fechas</a>
-        <a href="#tecnicos">Técnicos</a>
-        <a href="#resultados">Resultados</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#partidos">Partidos</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#historia">Club</a>
+        <a href="#contacto" class="nav-cta">Únete</a>
       </nav>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
     </header>
 
+    <!-- TICKER -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker-track">
+        <span class="ticker-item"><strong>Old Locks 3 – 2 Andes</strong> · Sub 10 · Amistoso</span>
+        <span class="ticker-sep">◆</span>
+        <span class="ticker-item">Inscripciones abiertas temporada 2026</span>
+        <span class="ticker-sep">◆</span>
+        <span class="ticker-item"><strong>Old Locks 1 – 1 Estadio</strong> · Sub 12 · Encuentro regional</span>
+        <span class="ticker-sep">◆</span>
+        <span class="ticker-item">Entrenamiento abierto — 22 Jun · ¡Trae a tu hija!</span>
+        <span class="ticker-sep">◆</span>
+        <span class="ticker-item"><strong>Old Locks 3 – 2 Andes</strong> · Sub 10 · Amistoso</span>
+        <span class="ticker-sep">◆</span>
+        <span class="ticker-item">Inscripciones abiertas temporada 2026</span>
+        <span class="ticker-sep">◆</span>
+        <span class="ticker-item"><strong>Old Locks 1 – 1 Estadio</strong> · Sub 12 · Encuentro regional</span>
+        <span class="ticker-sep">◆</span>
+        <span class="ticker-item">Entrenamiento abierto — 22 Jun · ¡Trae a tu hija!</span>
+      </div>
+    </div>
+
     <main>
+
+      <!-- HERO -->
       <section class="hero" id="inicio">
-        <div class="hero-copy">
-          <p class="eyebrow">Hockey infantil femenino</p>
-          <h1>Old Locks</h1>
-          <p class="hero-text">
-            Un club para aprender, entrenar y competir con alegría, disciplina y equipo.
-            Formamos jugadoras desde sus primeras prácticas hasta sus primeros torneos.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#contacto">Inscribirse</a>
-            <a class="button secondary" href="#fechas">Ver fechas</a>
+        <div class="hero-bg">
+          <div class="hero-shapes" aria-hidden="true">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
           </div>
         </div>
-
-        <div class="hero-mark" aria-hidden="true">
-          <img src="assets/old-locks-logo.png" alt="" />
-        </div>
-      </section>
-
-      <section class="section" id="fechas">
-        <div class="section-heading">
-          <p class="eyebrow">Calendario</p>
-          <h2>Próximas fechas</h2>
-        </div>
-        <div class="date-grid">
-          <article class="date-card">
-            <time datetime="2026-06-08">08 Jun</time>
-            <div>
-              <h3>Encuentro formativo Sub 10</h3>
-              <p>Canchas del club, 10:00 hrs</p>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Club de Hockey Césped</p>
+            <h1>Donde se<br /><em>forjan</em><br />campeonas</h1>
+            <p class="hero-sub">Bienvenidas al club de hockey de nuestra familia. Entrenamos con alegría, competimos con pasión y crecemos juntas dentro y fuera de la cancha.</p>
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="#contacto">Inscribirse</a>
+              <a class="btn btn-outline" href="#partidos">Ver calendario</a>
             </div>
-            <span>Local</span>
-          </article>
-          <article class="date-card">
-            <time datetime="2026-06-15">15 Jun</time>
-            <div>
-              <h3>Festival infantil Sub 12</h3>
-              <p>Estadio municipal, 11:30 hrs</p>
-            </div>
-            <span>Visita</span>
-          </article>
-          <article class="date-card">
-            <time datetime="2026-06-22">22 Jun</time>
-            <div>
-              <h3>Entrenamiento abierto</h3>
-              <p>Para nuevas jugadoras y familias</p>
-            </div>
-            <span>Abierto</span>
-          </article>
+          </div>
+          <div class="hero-emblem" aria-hidden="true">
+            <div class="emblem-ring"></div>
+            <img src="assets/old-locks-logo-transparent.png" alt="Old Locks" />
+          </div>
         </div>
-      </section>
-
-      <section class="section muted" id="tecnicos">
-        <div class="section-heading">
-          <p class="eyebrow">Equipo técnico</p>
-          <h2>Técnicos</h2>
-        </div>
-        <div class="coach-grid">
-          <article class="coach-card">
-            <div class="avatar">MC</div>
-            <h3>Maria Contreras</h3>
-            <p>Entrenadora principal</p>
-            <span>Fundamentos, confianza y juego colectivo.</span>
-          </article>
-          <article class="coach-card">
-            <div class="avatar">JV</div>
-            <h3>Javiera Valdes</h3>
-            <p>Preparación física</p>
-            <span>Movimiento, coordinación y cuidado corporal.</span>
-          </article>
-          <article class="coach-card">
-            <div class="avatar">AP</div>
-            <h3>Ana Pizarro</h3>
-            <p>Asistente tecnica</p>
-            <span>Acompañamiento en cancha y apoyo formativo.</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="resultados">
-        <div class="section-heading">
-          <p class="eyebrow">Últimos partidos</p>
-          <h2>Resultados</h2>
-        </div>
-        <div class="results-list">
-          <article class="result-row">
-            <span>Sub 10</span>
-            <strong>Old Locks 3 - 2 Andes</strong>
-            <small>Amistoso formativo</small>
-          </article>
-          <article class="result-row">
-            <span>Sub 12</span>
-            <strong>Old Locks 1 - 1 Estadio</strong>
-            <small>Encuentro regional</small>
-          </article>
-          <article class="result-row">
-            <span>Sub 8</span>
-            <strong>Jornada de habilidades</strong>
-            <small>Sin marcador competitivo</small>
-          </article>
-        </div>
-      </section>
-
-      <section class="section about" id="nosotros">
-        <div class="section-heading">
-          <p class="eyebrow">Comunidad Old Locks</p>
-          <h2>Nosotros</h2>
-        </div>
-        <div class="about-layout">
-          <p>
-            Old Locks es un espacio de hockey para niñas que quieren aprender, jugar y
-            crecer en equipo. Trabajamos con entrenamientos progresivos, grupos por edad
-            y un ambiente cercano para que cada jugadora se sienta parte desde el primer día.
-          </p>
-          <div class="about-stats" aria-label="Datos del club">
-            <div>
-              <strong>3</strong>
-              <span>Categorías infantiles</span>
-            </div>
-            <div>
-              <strong>2</strong>
-              <span>Entrenamientos semanales</span>
-            </div>
-            <div>
-              <strong>1</strong>
-              <span>Comunidad en cancha</span>
-            </div>
+        <div class="hero-stats" aria-label="Datos del club">
+          <div class="hero-stat">
+            <strong class="count" data-target="3">0</strong>
+            <span>Categorías</span>
+          </div>
+          <div class="hero-stat">
+            <strong class="count" data-target="2">0</strong>
+            <span>Entrenamientos semanales</span>
+          </div>
+          <div class="hero-stat">
+            <strong class="count" data-target="100">0</strong>
+            <span>% Pasión</span>
           </div>
         </div>
       </section>
 
-      <section class="contact" id="contacto">
-        <div>
-          <p class="eyebrow">Inscripciones abiertas</p>
-          <h2>Contacto</h2>
-          <p>
-            Escríbenos para coordinar una clase de prueba, resolver dudas de horarios o
-            conocer la categoría ideal para tu hija.
-          </p>
+      <!-- NOTICIAS -->
+      <section class="section" id="noticias">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow-dark">Del club</p>
+              <h2>Últimas noticias</h2>
+            </div>
+            <a class="link-more" href="#noticias">Ver todo →</a>
+          </div>
+          <div class="news-grid">
+            <article class="news-card news-card-featured">
+              <div class="news-card-img" style="background: linear-gradient(135deg,#06165f 0%,#1a4080 100%)">
+                <div class="news-card-badge">Resultado</div>
+                <div class="news-score-block">
+                  <span class="score-team">Old Locks</span>
+                  <span class="score">3 – 2</span>
+                  <span class="score-team">Andes HC</span>
+                </div>
+              </div>
+              <div class="news-card-body">
+                <p class="news-cat">Sub 10 · Amistoso formativo</p>
+                <h3>Primer triunfo de la temporada ante Andes</h3>
+                <p>Partido vibrante con dos goles en el último cuarto. El equipo Sub 10 demostró la madurez táctica trabajada en los últimos entrenamientos.</p>
+                <time datetime="2026-05-25">25 Mayo 2026</time>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <div class="news-card-img" style="background: linear-gradient(135deg,#0d1b3e 0%,#1a3566 100%)">
+                <div class="news-card-badge news-badge-gold">Inscripciones</div>
+                <div class="news-icon-block">📢</div>
+              </div>
+              <div class="news-card-body">
+                <p class="news-cat">Club</p>
+                <h3>Inscripciones abiertas temporada 2026</h3>
+                <p>Todas las categorías tienen cupos disponibles. Escríbenos para agendar una clase de prueba.</p>
+                <time datetime="2026-05-20">20 Mayo 2026</time>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <div class="news-card-img" style="background: linear-gradient(135deg,#1a2a5e 0%,#0a4080 100%)">
+                <div class="news-card-badge news-badge-teal">Evento</div>
+                <div class="news-icon-block">🏑</div>
+              </div>
+              <div class="news-card-body">
+                <p class="news-cat">Sub 12 · Regional</p>
+                <h3>Old Locks empata en duelo regional Sub 12</h3>
+                <p>Buen desempeño colectivo ante Estadio en el encuentro regional del mes de mayo.</p>
+                <time datetime="2026-05-18">18 Mayo 2026</time>
+              </div>
+            </article>
+          </div>
         </div>
-        <address>
-          <a href="mailto:hola@oldlocks.cl">hola@oldlocks.cl</a>
-          <a href="tel:+56912345678">+56 9 1234 5678</a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">@oldlocks_hockey</a>
-        </address>
       </section>
+
+      <!-- PARTIDOS -->
+      <section class="section section-dark" id="partidos">
+        <div class="container">
+          <div class="section-head light">
+            <div>
+              <p class="eyebrow-gold">Calendario</p>
+              <h2 class="light">Próximos partidos</h2>
+            </div>
+          </div>
+
+          <div class="fixtures">
+            <article class="fixture-row">
+              <div class="fixture-date">
+                <strong>08</strong>
+                <span>JUN</span>
+              </div>
+              <div class="fixture-info">
+                <p class="fixture-comp">Encuentro Formativo · Sub 10</p>
+                <h3>Old Locks <span class="vs">vs</span> Los Leones</h3>
+                <p class="fixture-place">Canchas del club · 10:00 hrs</p>
+              </div>
+              <div class="fixture-tag local">Local</div>
+            </article>
+
+            <article class="fixture-row">
+              <div class="fixture-date">
+                <strong>15</strong>
+                <span>JUN</span>
+              </div>
+              <div class="fixture-info">
+                <p class="fixture-comp">Festival Infantil · Sub 12</p>
+                <h3>Old Locks <span class="vs">vs</span> Club Manquehue</h3>
+                <p class="fixture-place">Estadio Municipal · 11:30 hrs</p>
+              </div>
+              <div class="fixture-tag visita">Visita</div>
+            </article>
+
+            <article class="fixture-row">
+              <div class="fixture-date">
+                <strong>22</strong>
+                <span>JUN</span>
+              </div>
+              <div class="fixture-info">
+                <p class="fixture-comp">Jornada Abierta · Todas las categorías</p>
+                <h3>Entrenamiento abierto Old Locks</h3>
+                <p class="fixture-place">Canchas del club · Horario por confirmar</p>
+              </div>
+              <div class="fixture-tag abierto">Abierto</div>
+            </article>
+
+            <article class="fixture-row">
+              <div class="fixture-date">
+                <strong>06</strong>
+                <span>JUL</span>
+              </div>
+              <div class="fixture-info">
+                <p class="fixture-comp">Torneo de Invierno · Sub 8</p>
+                <h3>Old Locks <span class="vs">vs</span> Por confirmar</h3>
+                <p class="fixture-place">Sede por confirmar · 09:00 hrs</p>
+              </div>
+              <div class="fixture-tag tbd">Por confirmar</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EQUIPO -->
+      <section class="section" id="equipo">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow-dark">Cuerpo técnico</p>
+              <h2>El equipo</h2>
+            </div>
+          </div>
+
+          <div class="staff-grid">
+            <article class="staff-card">
+              <div class="staff-avatar">
+                <span>MC</span>
+                <div class="staff-ring"></div>
+              </div>
+              <h3>Maria Contreras</h3>
+              <p class="staff-role">Entrenadora Principal</p>
+              <p class="staff-bio">Fundamentos técnicos, confianza y juego colectivo. Más de 10 años formando jugadoras en el hockey infantil.</p>
+              <div class="staff-tags">
+                <span>Sub 10</span><span>Sub 12</span>
+              </div>
+            </article>
+
+            <article class="staff-card">
+              <div class="staff-avatar">
+                <span>JV</span>
+                <div class="staff-ring"></div>
+              </div>
+              <h3>Javiera Valdés</h3>
+              <p class="staff-role">Preparadora Física</p>
+              <p class="staff-bio">Movimiento, coordinación y cuidado corporal. Especialista en desarrollo físico infantil y juvenil.</p>
+              <div class="staff-tags">
+                <span>Todas las categorías</span>
+              </div>
+            </article>
+
+            <article class="staff-card">
+              <div class="staff-avatar">
+                <span>AP</span>
+                <div class="staff-ring"></div>
+              </div>
+              <h3>Ana Pizarro</h3>
+              <p class="staff-role">Asistente Técnica</p>
+              <p class="staff-bio">Acompañamiento en cancha y apoyo formativo. Genera el ambiente de confianza que cada niña necesita para florecer.</p>
+              <div class="staff-tags">
+                <span>Sub 8</span><span>Sub 10</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- HISTORIA / VALORES -->
+      <section class="section section-gold-trim" id="historia">
+        <div class="container">
+          <div class="about-layout">
+            <div class="about-text">
+              <p class="eyebrow-dark">Nuestra historia</p>
+              <h2>Un club de<br />familia</h2>
+              <p>Old Locks nació del amor por el hockey y la convicción de que el deporte forma personas. Somos un club familiar donde cada jugadora es tratada con cariño, respeto y exigencia.</p>
+              <p>Trabajamos con entrenamientos progresivos, grupos por edad y un ambiente cercano para que cada jugadora se sienta parte desde el primer día.</p>
+              <a class="btn btn-navy" href="#contacto">Conoce más →</a>
+            </div>
+            <div class="about-values">
+              <div class="value-item">
+                <div class="value-icon">🏑</div>
+                <h3>Técnica</h3>
+                <p>Metodología progresiva adaptada a cada edad y nivel.</p>
+              </div>
+              <div class="value-item">
+                <div class="value-icon">🤝</div>
+                <h3>Equipo</h3>
+                <p>Construimos liderazgo colectivo y camaradería dentro y fuera de la cancha.</p>
+              </div>
+              <div class="value-item">
+                <div class="value-icon">❤️</div>
+                <h3>Pasión</h3>
+                <p>Cada entrenamiento, cada partido, cada gol celebrado juntas.</p>
+              </div>
+              <div class="value-item">
+                <div class="value-icon">🏆</div>
+                <h3>Excelencia</h3>
+                <p>Exigencia con cariño: buscamos lo mejor de cada jugadora.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section class="contact-section" id="contacto">
+        <div class="container">
+          <div class="contact-inner">
+            <div class="contact-copy">
+              <p class="eyebrow-gold">Inscripciones abiertas</p>
+              <h2>¿Quieres ser parte<br />de Old Locks?</h2>
+              <p>Escríbenos para coordinar una clase de prueba gratuita, resolver dudas de horarios o conocer la categoría ideal para tu hija.</p>
+            </div>
+            <div class="contact-cards">
+              <a class="contact-card" href="mailto:hola@oldlocks.cl">
+                <div class="contact-card-icon">✉️</div>
+                <strong>Correo</strong>
+                <span>hola@oldlocks.cl</span>
+              </a>
+              <a class="contact-card" href="tel:+56912345678">
+                <div class="contact-card-icon">📱</div>
+                <strong>WhatsApp</strong>
+                <span>+56 9 1234 5678</span>
+              </a>
+              <a class="contact-card" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                <div class="contact-card-icon">📸</div>
+                <strong>Instagram</strong>
+                <span>@oldlocks_hockey</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
-    <footer>
-      <span>Old Locks Hockey</span>
-      <span>Hockey infantil femenino</span>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="assets/old-locks-logo-transparent.png" alt="Old Locks" />
+            <div>
+              <strong>Old Locks Hockey Club</strong>
+              <span>Hockey césped · Categorías infantiles</span>
+            </div>
+          </div>
+          <nav class="footer-nav" aria-label="Navegación del pie">
+            <a href="#noticias">Noticias</a>
+            <a href="#partidos">Partidos</a>
+            <a href="#equipo">Equipo técnico</a>
+            <a href="#historia">Club</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+          <p class="footer-copy">© 2026 Old Locks Hockey Club. Todos los derechos reservados.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
